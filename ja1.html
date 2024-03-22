@@ -1,0 +1,772 @@
+                                  <!--ITERATIVE STATEMENT-->
+<!-- ITERATION,litarally means repetation of a process.so itetative statements are construct that help us repeat 
+some statement a define number of times.the different iterative statements available in javascript are
+DO WHILE LOOP
+WHILE LOOP        IT IS ENTRY CONTROL LOOP
+FOR LOOP
+loops can execute a block of code as long as specified condition is true
+THE WHILE LOOP LOOPS through a block of code as long as a specified condition is true
+
+STNTAX:
+while(condition){
+    code block to be executed
+} 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var i=5;
+        var j=1;
+        while(i<=50){
+        document.write("5" + "*" + j + "="+i);
+        i = i+5;
+        j++;
+        document.write("<br>");      
+        }
+    </script>
+</body>
+</html>  -->
+
+                                      <!--FUNCTION-->
+<!--FUNCTIONS is the group of statement
+a java script function is defined with a function keyword. and paranteses () is most important.
+syntax:
+sum();               (without calling function code is not run)
+function sum(){
+      fghjklkmn 
+      fghjklkj
+}
+function name can be contain letters,digits,underscore,dollar sign(same rule as a variable)
+ 1.
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+          hello();
+
+          function hello(){
+            document.write("welcome to my home");
+          }
+        </script>
+    </body>
+</html>
+
+2.
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+          sum();
+
+          function sum(){
+            var a = 20;
+            var b = 10;
+            var add = a+b;
+            document.write("addition of two number"+add +"<br>");
+          }
+        </script>
+    </body>
+</html>
+
+3.
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+          sum(10 , 20);
+          sum(40 , 20);
+          sum(20 , 30);
+
+          function sum(a , b){
+           
+            var add = a+b;
+            document.write("addition of two number"  +add  +"<br>");
+          }
+        </script>
+    </body>
+</html> -->
+ 
+
+
+                                <!--ARRAY-->
+<!--ARRAY is store multipal values in single variable.
+ARRAY is always start from number zero.
+LENGTH is starte with one.
+FOR EXAMPLE = T R U P T I
+              0 1 2 3 4 5
+1.
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+         
+          var a = ["trupti","mayuri","sai","dipali","rajaram"];
+          document.write(a[2]);
+        </script>
+    </body>
+</html> 
+   
+2.
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+         
+          var a = ["trupti","mayuri","sai","dipali","rajaram"];
+          document.write(a);
+        </script>
+    </body>
+</html> 
+
+3.
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+         
+          var array = ["trupti","mayuri","sai","dipali","rajaram"];
+          var length = array.length
+          alert(length);
+          document.write(length);
+        </script>
+    </body>
+</html> -->
+                                                <!--ARRAY METHOD-->
+<!-- sort()method = sorts the items of an array.
+the sort order can be either ALPHABETIC or NUMERIC, and either ascending(up) or descending(down)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["trupti","mayuri","sai"];
+        array.sort();
+        document.write(array);
+    </script>
+    </body>
+</html>-->
+
+<!--pop() = REMOVE the last element of an array and return the element.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["trupti","mayuri","sai"];
+        array.pop();
+        document.write(array);
+    </script>
+    </body>
+</html>-->
+
+<!--push() = ADD the new items to the end of an array and return the new length
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["trupti","mayuri","sai"];
+        array.push("truptishirke");
+        document.write(array);
+    </script>
+    </body>
+</html>-->
+
+<!--shift() method = REMOVE the first item of an array
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["trupti","mayuri","sai"];
+        array.shift();
+        document.write(array);
+    </script>
+    </body>
+</html>-->
+
+<!--unshift() method = ADD new item to the BEGINNING of an array and return the new length
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["trupti","mayuri","sai"];
+        array.unshift("truptishirke");
+        document.write(array);
+    </script>
+    </body>
+</html> -->
+
+<!--reverse() method = REVERSE the order of the elements of an array.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["trupti","mayuri","sai"];
+        array.reverse();
+        document.write(array);
+    </script>
+    </body>
+</html> -->
+
+<!--isArray method = determines whether an element an object is an array(output is true false format) 
+1.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["trupti","mayuri","sai"];
+        var check = Array.isArray(array)
+        document.write(check);
+    </script>
+    </body>
+</html> 
+
+2.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = 1;
+        var check = Array.isArray(array)
+        document.write(check);
+    </script>
+    </body>
+</html> -->
+
+<!--concat() method = it is use to JOIN TWO or MORE arrar.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array =  ["trupti","mayuri","sai"];
+        var check =  ["diksha","sakshi","rutuja"];
+        document.write(array.concat(check));
+    </script>
+    </body>
+</html>-->
+
+<!--indexOf() method = searches the array for the specified item, and returns its position.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array =  ["trupti","mayuri","sai"];
+        var check =  ["diksha","sakshi","rutuja"];
+        document.write(array.indexOf("sai"));
+    </script>
+    </body>
+</html>-->
+
+
+
+                                    <!--  DIALOG BOX -->
+
+
+ <!--JAVASCRIPT DIALOG BOXE alert,prompt,confirmation.
+PROMPT BOX = a prompt box is often used if you want the user to input the value before entering a page.
+Whan aprompt box pops up,the user will have to Click either "Ok" or "Cancel" to process after entering an input value
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var name = prompt("What's your name");
+            if(name!="")
+            document.write("nice to meet you"+name);
+        </script>
+    </body>
+</html> -->
+
+                                               <!--CONFIRMATION BOX-->
+<!--A Confirmation dialog boxnis mostly used to take user's permission on any option.
+It display a dialog box with two button :OKK and CANCEL.
+If user click OK button,the window method confirm() will return true.if user click on the CANCEL button,then confirm return false
+Window.open is redirect from one page to other page
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function myfun(){
+            var userconfirmation = confirm("Do you want to visit website ");
+            if(userconfirmation==true){
+                window.open("http://www.googel.com/");
+                return true;
+            }else{
+                document.write("user don't want to visit the website");
+                return false;
+            }
+        }
+        </script>
+        <input type="button" name="" onclick="myfun()" value="Click Me">
+    </body>
+</html>-->
+
+                                             
+
+                                        <!-- == ABSTRACT EQUALITY
+                                             === STRICT EQUALITY 
+
+ 1) The == operator will compare for equality after doing any necessary type conversions.
+ == it is use to only check the value.
+
+2) The === means both the type and the value we are comparing have to be the same.
+ === is used to check value as well as datatype.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+         document.write(1 == "1");
+         document.write("<br>");
+         document.write(1 === "1");
+         document.write("<br>");
+         document.write("1" == true );                o/p: true false true false true false 
+         document.write("<br>");
+         document.write("1" === true );
+         document.write("<br>");
+         document.write(null == undefined );
+         document.write("<br>");
+         document.write(null === undefined );
+        </script>
+    </body>
+</html>-->
+
+
+                                   <!--NULL
+                                       UNDEFINE
+
+1)
+ UNDEFINE = undefine means variable is declare but no assingn any value.
+ undefine is type itself
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var myVar;
+            document.write(myVar);
+        </script>  
+    </body>
+</html>
+
+2)
+NULL= null is an assingenment value it can be assingn to a variable as a representation of no value.
+null is an object.
+javascript never set a value null. that must be done programatically.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var myVar = null;
+            document.write(myVar);
+        </script>  
+    </body>
+</html>-->
+
+
+                                        <!--STRING AND OBJECT
+
+JAVASCRIPT string are primitive values,created from literals:
+
+var firstName = "Trupti";
+
+But string can also be defined as objects with the keword name:
+
+var firstName = new String("trupti");
+
+// type x will return string.
+// type y will return object.
+
+1)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "developer";
+            var truptishirke = new String("developer");
+            document.write(trupti == truptishirke);           //o/p =true
+        </script>  
+    </body>
+</html>
+
+2)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "developer";
+            var truptishirke = new String("developer"); 
+            document.write(trupti === truptishirke);          //o/p=false
+        </script>  
+    </body>
+</html>
+
+3)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "developer";
+            var truptishirke = new String("developer");
+            document.write(typeof(trupti));                   // o/p :string
+        </script>  
+    </body>
+</html>
+
+4)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "developer";
+            var truptishirke = new String("developer");
+            document.write(typeof(truptishirke));                   // o/p :object
+        </script>  
+    </body>
+</html>-->
+
+
+                        
+                                             <!--STRING METHOD-->
+<!--1)charAt()  2)indexOf() 3)lastIndexOf() 4)replace() 5)toUpperCase() 6)toLowerCase() 7)concat()
+
+Javascript, methods and properties are also avaliable to primitive values, because javascript treats primitive value 
+as object when executive methods and properties.
+
+0 : The length propery return the value of string.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel and please And keep loving and sharing";
+            document.write(trupti.length);       // o/p : 60;
+        </script>  
+    </body>
+</html>
+
+
+1 : The charAt() method return the character at a specified.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel and please And keep loving and sharing";
+            document.write(trupti.charAt(8));       // o/p : t
+        </script>  
+    </body>
+</html>
+
+2 : Finding a String in a String 
+    The indexOf() method return the index of (the position of) the first occarance of a specified text in a string.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel and please And keep loving and sharing";
+            document.write(trupti.indexOf("and"));     // o/p : 22
+            document.write(trupti.indexOf("t"));       // o/p : 8
+        </script>  
+    </body>
+</html>
+3 : The lastIndexOf() method return the index of the last occarance of a specified text in a string.
+    Both the indexOf(), and the lastIndexOf() method return -1 if the text is not found.
+    
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel and please And keep loving and sharing";
+            document.write(trupti.lastIndexOf("and"));     // o/p : 49 it is show the last and number.
+           
+        </script>  
+    </body>
+</html>
+4 : The replace() method replace a specified value with another value in a string.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel and please And keep loving and sharing";
+            document.write(trupti.replace("and" , "&"));     // o/p : Welcome to my channel & please And keep loving and sharing.
+            
+        </script>  
+    </body>
+</html>
+5 : A string is converted to upper case with toUpperCase().
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel and please And keep loving and sharing";
+            document.write(trupti.toUpperCase());   // o/p :  WELCOME TO MY CHANNEL AND PLEASE AND KEEP LOVING AND SHARING
+                                                    // uppercase means it is converted to capital letter.
+        </script>  
+    </body>
+</html>
+
+6 : A string is converted to lower case with toLowerCase().
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel and please And keep loving and sharing";
+            document.write(trupti.toLowerCase());   // o/p :   welcome to my channel and please and keep loving and sharing.
+                                                    // lowercase means it is converted to small letter.
+        </script>  
+    </body>
+</html>
+
+7 : concat() method join two or more string.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var trupti = "Welcome to my channel please And keep loving and sharing";
+            var shirke = "please subscribe me";
+            document.write(trupti.concat(shirke));   // o/p :   Welcome to my channel please And keep loving and sharingplease subscribe me.
+                                                   
+        </script>  
+    </body>
+</html>-->
+
+                                    
+                   
+                                <!--DOCUMENT OBJECT MODEL-->
+<!--
+<!DOCTYPE html>                                                 
+<head>
+<title>Responsive Navebar(content)</title>                                     
+<link rel="stylesheet" href="navebar.css"  type="text/css">                    // all tages is element.
+</head>                                                                        // src,href is attribute.
+<body>                                                                         // over all code is node.(document)
+<nav>                                                                          // alert is a global function.
+    <input type="checkbox" id="check"> (id is a unique value)                  //childnode ke ander child hote he.
+    <label for="check" class="checkbtn">                                        eg:- <head> this is childnode 
+                                                                                       <title></title> this is child
+  <i class="fas fa-bars"></i>                                                          <link>
+    </label>                                                                         </head>
+    <label class="logo">DesignX</label>                                                  
+    <ul>
+<li><a class="active" href="#" > Home </a></li>
+<li><a href="#" > About </a></li>
+<li><a href="#" > Services </a></li>
+<li><a href="#" > Contact </a></li>
+<li><a href="#" > Feedback </a></li>
+</ul>
+</nav>
+</body>
+</html>
+       
+
+id ko access krnekeliye document.getElementById use krte he.
+id ko # sign and class ko . sign use hota he 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="trupti">web</p>
+        <p class="shirke">developement</p>
+        <p class="shirke">developement 1</p>
+        <p class="shirke">developement 2</p>
+
+        how to access element by id
+        <script type="text/javascript">
+            var a = document.getElementById("trupti").innerHTML;
+            document.write(a);
+        </script>
+
+        how to access element by class
+        <script type="text/javascript">
+            var b = document.getElementByClassName("shirke")[1].innerHTML;
+            document.write(b);
+        </script>
+    </body>
+</html>
+
+
+o/p:
+web
+developement
+developement 1
+developement 2
+developement 1 
+
+Agr multipal class ho to index id dena pdta he for eg.[1]
+class ko display krnekeliye document.getElementByClassName ye use hota he.
+id ko chodke baki kisikobhi access krnekeliye ELEMENTS use hota he.
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="trupti">web</p>
+        <p class="shirke">developement</p>
+        <p class="shirke">developement 1</p>
+        <p class="shirke">developement 2</p>
+
+        <ul>
+            <li>like</li>
+            <li>share</li>
+            <li>subscribe</li>
+        </ul>
+
+        <script type="text/javascript">
+            var child = document.body.children;       //program me jitne bhi child he vo dekhneke liye document.body.children ka use krte he.
+        </script>
+        </body>
+        </html> -->
+        
+                                          <!--Access Document Object Model-->
+
+        <!DOCTYPE html>
+          <html>
+            <head>
+                <title></title>
+            </head>
+            <body>
+                <p id="trupti" >Shirke</p>
+                <p class="welcome">Trupti</p>
+                <!--how to access element by id-->
+                <script type="text/javascript">
+                    var a = document.getElementById("trupti").innerHTML;  //  o/p : Shirke 
+                    document.write(a);                            //      Trupti
+                </script>   
+                 <!--how to access element by class  -->                                    //     [object HTMLParagraphElement] 
+                <script type="text/javascript">
+                    var b = document.getElementsByClassName("trupti").innerHTML;
+                     document.write(b);
+                </script>                                          
+            </body>
+          </html>                            

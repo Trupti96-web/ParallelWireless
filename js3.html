@@ -1,0 +1,239 @@
+<!-- Even number -->
+
+ <!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            for(var a=1; a<=20; a++){
+                if(a%2 == 0){
+                    document.write(a +"<br>");
+                }
+            }
+        </script>
+    </body>
+</html> 
+o/p:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20 
+ 
+
+
+ Odd number -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            for(var a=1; a<=20; a++){
+                if(a%2 != 0){
+                    document.write(a +"<br>");
+                }
+            }
+        </script>
+    </body>
+</html> 
+
+o/p: 
+3
+5
+7
+9
+11
+13
+15
+17
+19 --> 
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var a = [7,3,5,4,2,9,1,8,6];
+            a.sort();
+            document.write(a.indexOf(5));
+            
+            </script>
+            </body>
+            </html>
+
+o/p: 4 -->
+
+<!-- For of loop-->
+ <!-- 1 ) <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+           var name = "trupti";
+           for(var char of name){
+        document.write("My Character"+" "+ char +"<br>");
+           }
+           
+        </script>
+    </body>
+</html> 
+
+o/p :
+My Character t
+My Character r
+My Character u
+My Character p
+My Character t
+My Character i 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+           var myNumber = [1,2,3,4,5,6,7,8];
+           for(var num of myNumber){
+        document.write("My Number"+" "+ num +"<br>");
+           }
+           
+        </script>
+    </body>
+</html>
+
+o/p: 
+My Number 1
+My Number 2
+My Number 3
+My Number 4
+My Number 5
+My Number 6
+My Number 7
+My Number 8
+
+For in loop
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+           var myNumber = [1,2,3,4,5,6,7,7];
+           for(var num in myNumber){
+        document.write("My Number"+" "+ num +"<br>");
+           }
+           
+        </script>
+    </body>
+</html> -->
+
+<!-- o/p :
+My Number 0
+My Number 1
+My Number 2
+My Number 3
+My Number 4
+My Number 5
+My Number 6
+My Number 7 -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+          var object = {a: 1 , b: 2 , c: 3};
+         for(let key in object)
+         // for(var key of Object.keys(object))
+           {
+        document.write(object[key]);
+        // document.write(key);
+           }
+           
+        </script>
+    </body>
+</html>
+
+o/p:
+a
+b
+c -->
+
+                                  <!-- object -->
+
+                                  
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+var object = {
+    firstName:"trupti",
+    lastName:"shirke",
+    rollNo:145,
+    division:"2"
+
+};
+
+for(var key in object){
+    document.write(key+" : "+object[key]+"<br>")
+}
+
+   
+</script>
+    </body>
+</html>
+o/p:
+
+firstName : trupti
+lastName : shirke
+rollNo : 145
+division : 2
+
+
+ <!--  for each loop  --> 
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var a = ["trupti" ,"rajaram", "shirke"];
+            a.forEach(function(value,index){
+               document.write(value + " : " + index+"<br>");
+            })
+        </script>
+    </body>
+</html>
+
+o/p:
+
+trupti : 0
+rajaram : 1
+shirke : 2

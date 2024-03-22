@@ -1,0 +1,239 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1 id="trupti1" style ="color:pink;">Do Study Properly</h1>
+        <script type="text/javascript">
+            document.getElementById("trupti").style.color="red";
+        </script>
+    </body>
+</html>-->
+
+                                     <!--JAVASCRIPT WINDOW LOCATION
+
+WINDOW is a global object of javascript (window.location.portal= it is a set of instruction"https:"
+,window.location.assign,window.location.pathname)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button onclick="myfun()">Click Me</button>
+        <script type="text/javascript">
+            function myfun(){
+               window.location="https://www.youtube.com/results?search_query=song";
+            }
+          
+        </script>
+    </body>
+</html>-->
+
+
+                            <!--PRINT THE PAGE
+the PRINT() method prints the contents of the current window
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id="divone">Div one content is here
+        <button onclick="myfun('divone')">Divone</button>
+    </div>
+    <div id="divtwo">Div two content is here
+        <button onclick="myfun('divtwo')">Divtwo</button>
+    </div>
+    <div id="divthree">Div three content is here
+        <button onclick="myfun('divthree')">Divthree</button>
+    </div>
+    
+        <button onclick="mywholepage('')">mywholepage</button>
+    <script type="text/javascript">
+        function mywholepage(){
+            window.print();
+        }
+        function myfun(paravalue){
+            var backup = document.body.innerHTML;
+            var divcontent = document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML = divcontent;
+            window.print();
+            document.body.innerHTML = backup;
+
+        }
+    </script>
+    </body>
+</html>-->
+
+
+                                                        <!--EVENT
+onclick is event onmouseout(),onmouseover(),onmousedown(),onmousepress()
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>first of all thankyou for this apportunity to introduce my self :) my name is trupti rajaram shirke:)</h1>
+        <button onclick="myfun()">Click Me</button>
+        <button onclick="mytwitter()">Click Me</button>
+        <button onclick="myyoutube()">Click Me</button>
+        <button onclick="mywhatsup()">Click Me</button>
+        <script type="text/javascript">
+            function myfun(){
+                document.body.style.backgroundColor = "pink";
+                document.body.style.color="white";
+            }
+            function mytwitter(){
+                document.body.style.backgroundColor = "red";
+                document.body.style.color="white";
+            }
+            function myyoutube(){
+                document.body.style.backgroundColor = "orange";
+                document.body.style.color="white";
+            }
+            function mywhatsup(){
+                document.body.style.backgroundColor = "black";
+                document.body.style.color="white";
+            }
+        </script>
+    </body>
+</html>-->
+
+
+
+                                                     <!--DATE & TIME
+
+MONTH is always start with zero. foe eg = 2019, 2, 8 o/p is mar 8 2019
+DATE is always start with one.
+getFullYear() get the year as a four digit number (yyyy)
+getMonth() get the month as a number(0-11)
+getDate() get the day as a number(1-31)
+Univarsal Coordinated Time(UTC) is the time set by the World Time Standard 
+
+1)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>                                           // o/p:  Mon Feb 12 2024 14:02:12 GMT+0530 (India Standard Time) 
+    <body>
+        <script type="text/javascript">
+            var a = new Date();
+            document.write(a);
+        </script>
+    </body>
+</html>
+
+2)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var dateObj = new Date();                     //  o/p: 2024/2/12 
+
+        var month = dateObj.getUTCMonth()+1;
+        var day = dateObj.getUTCDate();
+        var year = dateObj.getUTCFullYear();
+
+        document.write(year + "/" + month + "/" + day);
+    </script>
+    </body>
+</html>
+
+jb hme hmari mnki date add krni pdti he tb hm usme get ki jghape set use krna pdtahe
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var dateObj = new Date();
+                                                  
+        dateObj.setMonth(2);                          // o/p:Sun Apr 11 2021 13:58:27 GMT+0530 (India Standard Time) 
+        dateObj.setDate(11);
+        dateObj.setFullYear(2021, 3, 11);
+
+        document.write(dateObj);
+    </script>
+    </body>
+
+</html>-->
+
+                                    <!--Dynamic clock in javascript
+
+toLocalTimeString ki help se hm (Sun Apr 11 2021 13:58:27 GMT+0530 (India Standard Time) ) is sentence se
+only time ko hi show kr skte he (13:58:27) in this formate.
+1 sec = 1000 mlsec
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button onclick="clearInterval">Click Me</button>
+        <p id ="showClock"></p>
+
+        <script type="text/javascript">
+                var clock = setInterval(clocktiming,1000);
+               
+                function clocktiming(){
+                    var d = new Date();
+                    var thapa = d.toLocaleTimeString();
+                    document.getElementById('showClock').innerHTML = thapa;
+                }
+            
+        </script>
+    </body>
+</html>-->
+
+                <!--eval()-->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var x = 10;
+    var y = 20;
+    var a = eval("x*y") +"<br>";
+    var c = eval("2 + 2") +"<br>";
+    var a = eval("x + 17") +"<br>";
+    var res = a + b + c;
+    console.log(res);
+    console.log(eval('2 + 2') === eval('4'));
+</script>
+</body>
+</html> -->
+
+
+   <!-- event -->
+
+   <!DOCTYPE html>
+   <html>
+       <head>
+           <title></title>
+      
+           <script type="text/javascript">
+              function a(){
+               alert("hello");
+              }         
+           </script>
+            </head>
+         <body>
+       <button ondblclick="a()" >click Me</button>
+       
+          
+           </body>
+           </html>                       

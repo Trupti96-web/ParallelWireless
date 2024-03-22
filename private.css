@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+header{
+    width: 90%;
+    height: 20vh;
+    background-size: cover;
+ }
+ nav{
+    width: 110%;
+    height: 160px;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .logo{
+    margin-right: 60px;
+ }
+ 
+ ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: -1%;
+    font-size:15px;  
+    
+ }
+ ul li a{
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    color: black;
+    margin: 0;
+    
+    
+ }
+ ul li a:hover{
+ color: orangered;
+ text-decoration: underline;
+ transition: all 0.3s;
+ }
+ ul li ul.dropdown li{
+    display: block;
+    font-weight: 30px;
+ }
+ ul li ul.dropdown li{
+    font-size: 13px;
+  
+ }
+ ul li ul.dropdown{
+    width: 100%;
+    background-color: rgb(242, 107, 16);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    font-size: 50px;
+    font-weight:30px;;
+ }
+ ul a:hover{
+    color: orangered;
+    text-decoration: underline;
+ }
+  
+ ul li:hover ul.dropdown{
+ display: block;
+ background-color: rgb(236, 232, 232);
+ }
+ .lat ul  a{
+     color: black;
+     text-decoration: none;
+     margin-left: 19px;
+    
+ }
+ .lat ul  a:hover{
+    color: orangered;
+    text-decoration:underline ;
+ }
+ .btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    background:white;
+    color:orangered;
+    border-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    border-color: orangered;
+    width: 180px;
+    bottom: 20%;
+  
+ }
+ .btn:hover{
+    color:white;
+   background-color:orangered;
+   transition: 0.3s;
+ }
+.st img{
+    width: 1520px;
+    height: 400px;
+
+}
+    
+.banner-text{
+    position: absolute;
+    bottom: 19%;
+    padding-left:  410px;
+    padding-right: 560px;
+    background-color: rgba(245, 245, 245, 0.877);
+
+}
+    .banner-text p{
+        font-size: 59px;
+        padding-left:70px 0;
+        }
+    .bold button{
+        font-size: 13px;
+        color:white;
+        border-color: transparent;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        background-color: orangered;
+       
+        text-align: center;
+    }
+    .bold button:hover{
+        background:white;
+       color:orangered;
+       transition: 0.3s;
+    }
+    .lat p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-left: 300px;
+        padding-right: 300px;
+
+    }
+    .lat b{
+        color: orangered;
+    }
+    .lat b:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        gap: 2rem;
+    
+    } 
+    .row3 h2 {
+        color: rgb(20, 20, 19);
+        margin-right: 10%;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 100;
+        margin-top: -30% ;
+        margin-left: 10%;
+    }    
+    .row3 P{
+        font-size: 23px;
+        font-family:'Times New Roman', Times, serif;
+        line-height: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: left;
+    }
+    .row3 b{ 
+        font-size: 18px;
+        font-weight: 750;
+        color: orangered;
+    }
+    .row3 b:hover{
+         color: orange;
+         text-decoration: underline;
+     }
+    .column3 img{
+         width: 80%;
+         margin-left: 800px;
+         margin-bottom: -30%;  
+
+
+    }
+    .row3 h3 {
+        color: orangered;
+        text-align: left;
+        margin-left: 10%;
+        font-weight: 900;
+        font-size: 20px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    }
+    
+    .row3 h3:hover {
+        color: orange;
+        transition: all 0.3s;
+        text-decoration: underline;
+        
+    }
+    .div{
+        margin-top: -10%;
+        }
+    .div1{
+       margin-top: -15%;
+    }
+    .btn1 button{
+        padding: 10px 0 10px 0;
+        font-size: 16px;
+        color:white;
+        background-color:orangered;
+        border-color: transparent;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        border-color: orangered;
+        width: 250px;
+        bottom: 20%;
+        margin-left: 70px;
+      
+     }
+     .btn1 button:hover{
+        background-color:white;
+       color:orangered;
+       transition: 0.3s;
+     }
+
+     .lat13 b2{
+        padding-left: 80px;
+        font-size: 40px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .lat13 p{
+        text-align:left;
+        font-size: 20px;
+        font-family:Arial, sans-serif;
+        padding-left: 80px;
+        padding-right: 180px;
+        
+    }
+    .lat13 b{
+        color: orangered;
+    }
+    .lat13 b:hover{
+        color: orange;
+        text-decoration: underline;
+     }
+     .im img{
+        margin-top: -80px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 80px;
+        margin-top: -30%;
+        color: #fff;
+      }
+      .bold button{
+        padding: 10px 18px;
+        font-size: 15px;
+        color:white;
+        border-color: transparent;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        background-color: orangered;
+        width: 180px;
+        bottom: 20%;
+      
+    }
+    .bold button:hover{
+        background:white;
+       color:orangered;
+       transition: 0.3s;
+    }
+    .container aside {
+        width: 100%;
+        max-width: 585px;
+        float: none;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 50px 5% 50px 8%;
+        text-align: left;
+    margin-top: 0%;
+      }
+      .container aside h3{
+        font-size: 30px; 
+
+      }
+      .container aside p{
+        font-size: 20px; 
+
+      }
+       .row00{
+        width: 100%;
+        display: table;
+        flex-flow: column wrap;
+        max-height : 1800px;
+        overflow: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        max-width: 1400px;
+        float: left;
+        
+        
+    }
+    .column00{
+        width: 31.40%;
+        padding-bottom: 115px;
+        margin: 10px;
+        float: left;     
+    }
+    .column00 img{
+        width: 100%;
+        cursor: pointer;
+        height: auto; 
+        margin: 20px;
+        display: block;   
+    }
+    
+    .column00 img:hover{
+        transform: scale(1.04);
+        opacity :1;
+        
+    }
+    
+    .column00 p{
+        font-family:sans-serif;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .column00 h1{
+        margin-left: 20px;
+    }
+    .column00 button{
+        padding: 10px 18px;
+        font-size: 15px;
+        color:white;
+        border-color: orangered;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        background-color: orangered;
+        width: 150px;
+        text-align: center;
+        
+       
+       
+    }
+    .column00 button:hover{
+        background:white;
+        color:orangered;
+        transition: 0.3s;
+     
+    }
+    .img1 img{
+        height: 270px;
+        width: 370px;
+    }
+    .img2 img{
+        height: 270px;
+        width: 370px;  
+    }
+    .img3 img{
+        height: 270px;
+        width: 370px;
+    }
+    .product h2{
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .row8{
+        margin-top: 600px; 
+       
+    }
+    .footer{
+        background-color: #e3e0e0;;
+    }
+    
+    .footer-col img{
+        width: 15%;
+        margin-left: 70px;
+        margin-top: 70px;
+    
+    }
+    .social-links{
+        margin-left: 90px;
+        margin-top: -40px;
+    
+    }
+     .social-links h4{
+        font-size: 25px;
+        font-weight: 200;
+        font-family: Arial, sans-serif;
+    }
+    .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color:orangered;
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color:#ffffff;
+        transition: all 0.5s ease;
+    }
+    .social-links a:hover{
+        color: #6d6e72;
+    }
+    
+    .links h4{
+        margin-left: 650px;
+        margin-top: -100px;
+        font-size: 25px;
+        font-weight: 200;
+        text-decoration-line: underline;
+    
+    }
+    .links ul li a{
+        margin-left: 650px;
+        margin-top: -10px;
+        color: black;
+        font-size: 20px;
+        font-family:'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+    .links a:hover {
+    
+        color: orange;
+        transform: scale(1.03);
+    
+    }
+    .link h4{
+        margin-left: 1200px;
+        margin-top: -214px;
+        font-size: 25px;
+        font-weight: 200;
+        text-decoration-line: underline;
+    
+    }
+    
+    .link ul li a{
+        margin-left: 1200px;
+        color: black;
+        font-size: 15px;
+        margin-top: 20px;
+        text-decoration: none;
+    
+    }
+    .link a:hover {
+    
+        color: orange;
+        transform: scale(1.03);
+    
+    }
+    .loc ul li a {
+        margin-left: 1200px;
+        margin-top: 20px;
+        color: black;
+        text-decoration: none;
+    }
+    .loc a:hover {
+    
+        color: orange;
+        transform: scale(1.03);
+    
+    }
+    .link ul  a{
+        margin-left: 650px;
+        line-height: 10px;
+        margin-top: -150px;
+        font-size: 25px;
+    
+    }
+    .print h4{
+        margin-left: 100px;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .print h4:hover {
+    
+        color: orange;
+        transform: scale(1.03);
+    
+    }
+    
+     
